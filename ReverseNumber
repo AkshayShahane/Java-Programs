@@ -1,0 +1,20 @@
+package pack2;
+
+/*WAP to print the array element in reverse order.*/
+public class ReverseNumber 
+{
+	int arr[]= {10,20,30,40,50};
+	void display()
+	{
+		for(int i=4;i>=0;i--)
+		{
+			System.out.println(arr[i]);
+		}
+	}
+	
+	public static void main(String[] args) 
+	{
+		ReverseNumber obj=new ReverseNumber();
+		obj.display();
+	}
+}
