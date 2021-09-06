@@ -1,0 +1,19 @@
+/*WAP to print the table of number provided*/
+public class NumberTable 
+{
+	public void show(int num)
+	{
+		System.out.println("Here You want "+num+"'s table");
+		for(int i=1;i<=10;i++)
+		{
+			int result=(num*i);
+			System.out.println("2 * "+i+" = "+result);
+		}
+	}
+	
+	public static void main(String[] args) 
+	{
+		NumberTable obj=new NumberTable();
+		obj.show(2);
+	}
+}
