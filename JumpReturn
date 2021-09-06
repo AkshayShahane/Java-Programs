@@ -1,0 +1,21 @@
+
+/*WAP to demonstrate return jump statement*/
+public class JumpReturn 
+{
+	protected void display()
+	{
+		for(int i=1;i<=10;i++)
+		{
+			if(i==5)
+			{
+				return;
+			}
+			System.out.println(i);
+		}
+	}
+	
+	public static void main(String[] args) 
+	{
+		new JumpReturn().display();
+	}
+}
