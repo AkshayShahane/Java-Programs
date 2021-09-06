@@ -1,0 +1,22 @@
+
+/*WAP to demonstrate the continue statement*/
+public class JumpContinue 
+{
+	private void show()
+	{
+		for(int i=1;i<=10;i++)
+		{
+			if(i==5)
+			{
+				System.out.println("{{{ 5 SKIPED }}}");
+				continue;
+			}
+			System.out.println(i);
+		}
+	}
+	
+	public static void main(String[] args) 
+	{
+		new JumpContinue().show();
+	}
+}
