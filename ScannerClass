@@ -1,0 +1,25 @@
+
+import java.util.Scanner;
+
+class ScannerClass
+{
+	
+	void meth1()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("What is your name? ");
+		String input=sc.next();
+		System.out.println("Hi "+input);
+	}
+	
+	public ScannerClass()
+	{
+		System.out.println("You are in Non-parameterized Constructor ");
+	}
+	
+	public static void main(String[] args) 
+	{
+		ScannerClass obj=new ScannerClass();
+		obj.meth1();
+	}
+}
