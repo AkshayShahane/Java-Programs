@@ -1,0 +1,32 @@
+
+/*WAP to check whteher the number is even or odd ,take number from user*/
+
+import java.util.Scanner;
+
+public class ScannerDemo4 
+{
+	
+	void display()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the value: ");
+		int num=sc.nextInt();
+		
+		if(num%2==0)
+		{
+			System.out.println("Number is Even");
+		}
+		else
+		{
+			System.out.println("Number is Odd");
+		}
+	}
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("***Finding Even or Odd");
+		System.out.println("----------------------------");
+		ScannerDemo4 obj=new ScannerDemo4();
+		obj.display();
+	}
+}
