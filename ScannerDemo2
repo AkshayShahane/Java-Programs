@@ -1,0 +1,52 @@
+
+/*WAP to find greatest number from 3 numbers , take 3 numbers as input
+ * from user */
+
+import java.util.Scanner;
+
+public class ScannerDemo2 
+{
+	
+	void greatest()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter 1st value: ");
+		int num1=sc.nextInt();
+		System.out.println("Enter 2nd value: ");
+		int num2=sc.nextInt();
+		System.out.println("Enter 3rd value: ");
+		int num3=sc.nextInt();
+		
+		if(num1>num2)
+		{
+			if(num1>num3)
+			{
+				System.out.println("num1 is greatest");
+			}
+			else
+			{
+				System.out.println("num3 is gretest");
+			}
+		}
+		else
+		{
+			if(num2>num3)
+			{
+				System.out.println("num2 is greatest");
+			}
+			else
+			{
+				System.out.println("num3 is greatest");
+			}
+		}
+		
+	}
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("***Finding Greatest Number***");
+		System.out.println("---------------------------");
+		ScannerDemo2 obj=new ScannerDemo2();
+		obj.greatest();
+	}
+}
