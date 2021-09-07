@@ -1,0 +1,29 @@
+
+/*WAP which prints the even numbers between 1 to 100 in an increasing order*/
+
+public class Even 
+{
+		
+		void meth1()
+		{
+			for(int i=1;i<=100;i++)
+			{
+				if(i%2==0)
+				{
+					System.out.println(i);
+				}
+				else
+				{
+					continue;
+				}
+			}
+		}
+	
+	
+		public static void main(String[] args) 
+		{
+			System.out.println("***Printing Even Numbers from 1 to 100***");
+			Even obj=new Even();
+			obj.meth1();
+		}
+}
