@@ -1,0 +1,34 @@
+
+/*WAP to check whether user is eligible for Vote or not, take input from user*/
+
+import java.util.Scanner;
+
+public class ScannerDemo5 
+{
+	
+	private void display()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your age: ");
+		int age=sc.nextInt();
+		System.out.println("Your age is: "+age);
+		
+		if(age>=18)
+		{
+			System.out.println("Congratulation!!! You are eligible for Vote");
+		}
+		else
+		{
+			System.out.println("Sorry!!! You are not eligible");
+		}
+	}
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("***Eligiblity for Vote***");
+		System.out.println("-----------------------------");
+		ScannerDemo5 obj=new ScannerDemo5();
+		obj.display();
+		
+	}
+}
