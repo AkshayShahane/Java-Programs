@@ -1,0 +1,29 @@
+/*WAP for addition , take values from user at runtime and do the addition*/
+
+import java.util.Scanner;
+
+
+public class ScannerDemo 
+{
+
+		public void addition()
+		{
+			Scanner sc=new Scanner(System.in);
+			
+			System.out.println("Please, Enter the 1st value: ");
+			int num1=sc.nextInt();
+			System.out.println("You entered 1st value: "+num1);
+			System.out.println("Please, Enter the 2nd value: ");
+			int num2=sc.nextInt();
+			System.out.println("You entered 2nd value: "+num2);
+			int result=(num1+num2);
+			System.out.println();
+			System.out.println("***Result of Addition is: "+result+" ***");
+		}
+	
+		public static void main(String[] args) 
+		{
+			ScannerDemo obj=new ScannerDemo();
+			obj.addition();
+		}
+}
