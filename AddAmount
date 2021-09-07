@@ -1,0 +1,24 @@
+
+/*WAP for deposite the amount in user account*/
+
+import java.util.Scanner;
+public class AddAmount 
+{
+		int amount=500;
+	void deposite()
+	{
+		System.out.println("Please enter the amount to be deposited: ");
+		Scanner sc=new Scanner(System.in);
+		int deposite=sc.nextInt();
+		int finalamount= amount + deposite;
+		System.out.println("Current Balance is "+finalamount);
+	}
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("***AddAmount in Bank Account***");
+		System.out.println("Account Balance is  "+new AddAmount().amount);
+		AddAmount obj=new AddAmount();
+		obj.deposite();
+	}
+}
