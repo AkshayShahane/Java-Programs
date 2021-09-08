@@ -1,0 +1,45 @@
+
+/*WAP to take employee information and print it.*/
+
+import java.util.Scanner;
+
+class ScannerDemo2 
+{
+	public void display()
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("***Employee Information***");
+		System.out.println("------------------------------");
+		
+		System.out.println("Enter the Employee name: ");
+		String empName=sc.next();
+		
+		
+		System.out.println("Enter the Employee Address: ");
+		sc.nextLine();
+		String empAddress=sc.nextLine();
+		
+		System.out.println("Enter the Employee Salary: ");
+		int empSal=sc.nextInt();
+		
+		System.out.println("Enter the Employee Department: ");
+		sc.nextLine();
+		String empDept=sc.nextLine();
+		
+		System.out.println("Enter the Employee Id: ");
+		int empId=sc.nextInt();
+		
+		System.out.println("------------------------");
+		System.out.println("Employee Name is "+empName);
+		System.out.println("Employee Address is "+empAddress);
+		System.out.println("Employee Salary is "+empSal);
+		System.out.println("Employee Department is "+empDept);
+		System.out.println("Employee Id is "+empId);
+	}
+	public static void main(String[] args) 
+	{
+		ScannerDemo2 obj=new ScannerDemo2();
+		obj.display();
+	}
+}
