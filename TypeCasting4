@@ -1,0 +1,37 @@
+
+/*WAP to type cast short value into other PDT*/
+
+public class TypeCasting4 
+{
+	protected void meth1()
+	{
+		int i=55;
+		
+		System.out.println("***Int to long***");
+		System.out.println();
+		long l=i;
+		System.out.println("int value==>"+i);
+		System.out.println("converted value from int to long==>"+l);
+		System.out.println("-----------------------------------");
+		
+		System.out.println("***Int to float***");
+		System.out.println();
+		float f=i;
+		System.out.println("int value==>"+i);
+		System.out.println("converted value from int float==>"+f);
+		System.out.println("-----------------------------------");
+		
+		System.out.println("***int to double****");
+		System.out.println();
+		double d=i;
+		System.out.println("int value==>"+i);
+		System.out.println("converted value from int to double==>"+d);
+		System.out.println("--------------------------------------");
+		
+		
+	}
+	public static void main(String[] args) 
+	{
+		new TypeCasting4().meth1();
+	}
+}
