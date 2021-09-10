@@ -1,0 +1,50 @@
+
+/*WAP to type cast byte value into other PDT*/
+
+public class TypeCasting1 
+{
+	public static void main(String[] args) 
+	{
+		TypeCasting1 obj=new TypeCasting1();
+		obj.meth1();
+	}
+	private void meth1()
+	{
+		byte b=10;
+		
+		System.out.println("***Byte to Integer***");
+		System.out.println();
+		int i=b;
+		System.out.println("byte value==>"+b);
+		System.out.println("converted byte value into int is==>"+i);
+		System.out.println("----------------------");
+		
+		System.out.println("***Byte to Short***");
+		System.out.println();
+		short s=b;
+		System.out.println("byte value==>"+b);
+		System.out.println("converted byte value into short is==>"+s);
+		System.out.println("----------------------------");
+		
+		System.out.println("***Byte to long***");
+		System.out.println();
+		long l=b;
+		System.out.println("byte value==>"+b);
+		System.out.println("converted byte value into long is==>"+l);
+		System.out.println("------------------------------------");
+		
+		System.out.println("***Byte to float***");
+		System.out.println();
+		float f=b;
+		System.out.println("byte value==>"+b);
+		System.out.println("converted byte value into float is==>"+f);
+		System.out.println("-------------------------------------");
+		
+		System.out.println("***Byte to double***");
+		System.out.println();
+		double d=b;
+		System.out.println("byte value==>"+b);
+		System.out.println("converted byte value into double is===>"+d);
+		System.out.println("--------------------------------------");
+	}
+}
