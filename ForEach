@@ -1,0 +1,14 @@
+
+public class ForEach 
+{
+	public static void main(String[] args)
+	{
+		String[] fruits=new String[] {"orange","Apple","Pear","Strawberry"};
+		
+		for(String x: fruits)
+		{
+			System.out.println();
+			System.out.println(x);
+		}
+	}
+}
