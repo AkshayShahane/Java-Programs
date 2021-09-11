@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+class Task3 
+{
+	void meth1()
+	{
+		float f;
+		float sum=0.0f;
+		Scanner sc=new Scanner(System.in);
+		
+		do
+		{
+			System.out.println("Enter Number: ");
+			f=sc.nextFloat();
+			sum=sum+f;
+			
+		}while(!(f==0));
+		
+		System.out.println("sum==>"+sum);
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+		new Task3().meth1();
+	}
