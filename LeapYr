@@ -1,0 +1,32 @@
+
+/*WAP to check whether entered year is leap year or not*/
+
+import java.util.Scanner;
+public class LeapYr
+{
+	public int leap()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the Year: ");
+		int year=sc.nextInt();
+		
+		if(year%400==0 || year%4==0)
+		{
+			System.out.println("Entered Year is Leap Year");
+		}
+		else if(year%100==0)
+		{
+			System.out.println("Entered Year is not Leap Year");
+		}
+		else
+		{
+			System.out.println(" from else: Entered year is not lear year");
+		}
+		
+		return 0;
+	}
+	public static void main(String[] args) 
+	{
+		new LeapYr().leap();
+	}
+}
