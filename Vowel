@@ -1,0 +1,58 @@
+
+/*WAP to check whether user provided alphabet is vowel or consonent*/
+
+import java.util.Scanner;
+public class Vowel 
+{
+		void meth1()
+		{
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Enter the Alphabet");
+//			String str=sc.next();	method 1
+//			char c=str.charAt(0);
+			
+			char c=sc.next().charAt(0);  //method 2
+			
+			switch(c)
+			{
+				case 'a':
+					System.out.println("Vowel");
+					break;
+				case 'e':
+					System.out.println("Vowel");
+					break;
+				case 'i':
+					System.out.println("Vowel");
+					break;
+				case 'o':
+					System.out.println("Vowel");
+					break;
+				case 'u':
+					System.out.println("Vowel");
+					break;
+				case 'A':
+					System.out.println("Vowel");
+					break;
+				case 'E':
+					System.out.println("Vowel");
+					break;
+				case 'I':
+					System.out.println("Vowel");
+					break;
+				case 'O':
+					System.out.println("Vowel");
+					break;
+				case 'U':
+					System.out.println("Vowel");
+					break;
+				default:
+					System.out.println("Consonant");
+					break;
+			}
+			
+		}
+		public static void main(String[] args)
+		{
+			new Vowel().meth1();
+		}
+}
