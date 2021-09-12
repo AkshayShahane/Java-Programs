@@ -1,0 +1,60 @@
+
+/*WAP to take 3 value as input and generate addition as output where value should
+ * be less than 9 or greater than 0*/
+import java.util.Scanner;
+public class Task5
+{
+	static int num1,num2,num3;
+	Scanner sc=new Scanner(System.in);
+	
+	void meth1()
+	{
+		System.out.println("Enter the value 1: ");
+		num1=sc.nextInt();
+		System.out.println("-------------------------------");
+		
+		while(num1<0 || num1>9)
+		{
+			System.out.println("Invalid");
+			System.out.print("Enter the Number 1: ");
+			num1=sc.nextInt();
+			System.out.println("-------------------------------");
+		}
+		
+		System.out.println("Enter the value 2: ");
+		num2=sc.nextInt();
+		System.out.println("-------------------------------");
+		
+		while(num2<0 || num2>9)
+		{
+			System.out.println("Invalid");
+			System.out.print("Enter the Number 2: ");
+			num2=sc.nextInt();
+			System.out.println("-------------------------------");
+		}
+		
+		System.out.println("Enter the value 3: ");
+		num3=sc.nextInt();
+		System.out.println("-------------------------------");
+		
+		while(num3<0 || num3>9)
+		{
+			System.out.println("Invalid");
+			System.out.print("Enter the Number 3: ");
+			num3=sc.nextInt();
+			System.out.println("-------------------------------");
+		}
+		
+		int result = num1+num2+num3;
+		System.out.println("Addition of three number is==>"+result);
+	}
+	
+	
+	public static void main(String[] args)
+	{
+		Task5 obj=new Task5();
+		obj.meth1();
+		
+	}
+	
+}
