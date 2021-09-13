@@ -1,0 +1,19 @@
+
+/*Fourth way of instanciating the array*/
+import java.util.Scanner;
+
+public class arrayWay4 
+{
+	public static void main(String[] args) 
+	{
+		int arr[]= {78,88,90,5,10,60};
+		
+		
+		System.out.println("****Printing the Array Elements****");
+		
+		for(int j=0;j<=arr.length-1;j++)
+		{
+			System.out.println(arr[j]);
+		}
+	}
+}
