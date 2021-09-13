@@ -1,0 +1,29 @@
+
+/*Given an array of Integer, return the sum of the first 2 elements in
+ * the array.If the array length is less than 2, just sum up the element
+ * that exist return 0 if the array length is 0*/
+
+public class lp3 
+{
+	void meth()
+	{
+		int arr[]= {15,45,87};
+		
+		if(arr.length>=2)
+		{
+			int result=arr[0]+arr[1];
+			System.out.println("Result is: "+result);
+		}
+		else
+		{
+			for(int x:arr)
+			{
+				System.out.println(x);
+			}
+		}
+	}
+	public static void main(String[] args) 
+	{
+		new lp3().meth();
+	}
+}
