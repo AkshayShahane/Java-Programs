@@ -1,0 +1,19 @@
+
+/*third way of instanciating the array*/
+import java.util.Scanner;
+
+public class arrayWay3 
+{
+	public static void main(String[] args) 
+	{
+		int []arr=new int[] {10,20,30};
+		
+		
+		System.out.println("****Printing the Array Elements****");
+		
+		for(int j=0;j<=arr.length-1;j++)
+		{
+			System.out.println(arr[j]);
+		}
+	}
+}
