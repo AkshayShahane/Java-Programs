@@ -1,0 +1,25 @@
+
+/*Return an int array length 3 containing the first 3 digits of pi
+ * {3,1,4}
+ * makePi()? [3,1,4]
+ * public int[] makePi()
+ * {
+ * 		write your logic here
+ * }*/
+ class makePi 
+{
+	int[] makepi()
+	{
+		int arr[]= {3,1,4};
+		return arr;
+	}
+	public static void main(String[] args) 
+	{
+		int result[]=new makePi().makepi();
+		
+		for(int x:result)
+		{
+			System.out.print(x+" ");
+		}
+	}
+}
