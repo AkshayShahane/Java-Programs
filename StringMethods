@@ -1,0 +1,121 @@
+
+import java.util.Scanner;
+
+public class StringMethods 
+{
+	public static void main(String[] args) 
+	{
+		StringMethods obj=new StringMethods();
+		//obj.meth1();
+		obj.login();
+	}
+	
+	void meth1()
+	{
+		String s1="Java";
+		String s2=new String("Java");
+		String s3="Java";
+		String s4=new String("Java");
+		String s5="Java is awesome";
+		
+		//length()
+		System.out.println("length()===>"+s5.length());
+		
+		//.equals() checks the content present inside the String
+		// == checks the address location of the string
+		System.out.println(".equals()=====>"+s1.equals(s2));
+		System.out.println(".equals()===>"+s1.equals("JAVA"));
+		
+		//.equalsIgnoreCase()
+		
+		System.out.println(".equalsIgnoreCase()===>"+s1.equalsIgnoreCase("JAVA"));
+		
+		// ==
+		
+		System.out.println(s1==s3);
+		System.out.println(s2==s4);
+		System.out.println(s1==s2);
+		
+		//charAt()
+		System.out.println("charAt()==>"+s1.charAt(2));
+		
+		//startsWith()
+		System.out.println("startWith()==>"+s1.concat(" is awesome").startsWith("Java"));
+		
+		System.out.println("startWith()==>"+s5.startsWith(" Java "));
+		
+		//toLowerCase()
+		System.out.println("toLowerCase()===>"+s5.toLowerCase());
+		System.out.println(s5);
+		s5=s5.toUpperCase();
+		
+		//toUpperCase()
+		System.out.println("toUpperCase()===>"+s5);
+		System.out.println(s5);
+		
+		//substring()
+		System.out.println("substring()===>"+s5.substring(8));
+		System.out.println("substring()====>"+s5.substring(11,13));
+		
+		//replace()
+		System.out.println("replace()"+s1.replace('a','A').equalsIgnoreCase(s2));
+		
+		String s7=" Java is ";
+		System.out.println(s7.length());
+		
+		//trim()
+		System.out.println("trim()===>"+s7.trim().length());
+		
+		//indexOf()
+		System.out.println("indexOf()===>"+s7.indexOf('a'));
+		
+		//lastIndexOf()
+		System.out.println("lastIndexOf()===>"+s7.indexOf('a'));
+		
+		String s8="I love java";
+		byte arr[]=s8.getBytes();
+		for(byte x:arr)
+		{
+			System.out.print((char) x);
+		}
+		
+	}
+	void login()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Please enter your name: ");
+		String uname=sc.next();
+		System.out.println("Please enter your password: ");
+		String password=sc.next();
+		System.out.println("Please enter your data: ");
+		sc.nextLine();
+		String data=sc.nextLine();
+		System.out.println("Your data is secured with us..");
+		System.out.println("Press (1) if you want to see the data");
+		System.out.println("Press (2) if you want to see to exit");
+		
+		int choice=sc.nextInt();
+		switch(choice)
+		{
+			case 1:
+				System.out.println("Enter ur username: ");
+				String s1=sc.next();
+				System.out.println("Enter ur pwd: ");
+				String s2=sc.next();
+				
+				if(uname.equals(s1) && password.equals(s2))
+				{
+					System.out.println(data);
+					
+				}
+				else
+					System.out.println("Please check your credential");
+				break;
+			case 2:
+				System.out.println("Thanks for your trust on us..");
+				System.out.println("Have a great day ");
+				break;
+		}
+	}
+
+}
