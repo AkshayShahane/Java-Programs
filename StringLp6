@@ -1,0 +1,21 @@
+
+/*Given a string of even length,return the first half,so the string 
+ * "WooHoo" yeilds "Woo"
+ */
+
+
+public class StringLp6 
+{
+	public String meth1(String s1)
+	{
+		return s1.substring(0,s1.length()/2);
+	}
+	
+	
+	
+	public static void main(String[] args) 
+	{
+		String s1=new StringLp6().meth1("WooHoo");
+		System.out.println(s1);
+	}
+}
