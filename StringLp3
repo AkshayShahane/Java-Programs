@@ -1,0 +1,23 @@
+
+/* Given an "out" string length 4 such as "<<>>>" & word ,return a new
+ * string where the word is in the middle of out string eg.<<word>>
+ * 
+ * makeOutWord("<<>>","Yay")? "<<Yay>>";
+ */
+
+
+public class StringLp3 
+{
+	
+	public String makeOutWord(String out,String word)
+	{
+		return out.substring(0,2).concat(word).substring(2);
+	}
+	
+	
+	public static void main(String[] args)
+	{
+		String s1=new StringLp3().makeOutWord("<<>>","Yay");
+		System.out.println(s1);
+	}
+}
