@@ -1,0 +1,21 @@
+
+/* Given a string name eg."Bob" return a greeting of the form "Hello 
+ * Bob";
+ */
+
+
+
+public class StringLp1 
+{
+	public String meth1(String name)
+	{
+		return "Hello "+name+"!!!";
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+		String s1=new StringLp1().meth1("Akshay");
+		System.out.println(s1);
+	}
+}
