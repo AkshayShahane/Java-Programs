@@ -1,0 +1,31 @@
+
+/*Given a string return the string made of its first two chars, so the
+ * string "Hello" yeilds "He".if the string is shorter than length 2
+ * return whatever there is so "x" yeilds "x" & the empty string " "
+ * yeilds the empty string " ".
+ * 
+ *  firsttwo("Hello")? "He"
+ *  firsttwo("abcdefg")? "ab"
+ *  firsttwo(" ")? " " 
+ */
+
+
+
+public class StringLp5
+{
+	public String firsttwo(String str)
+	{
+		
+		if(str.length()>=2)
+			return str.substring(0,2);
+		else
+			return str;
+	}
+	
+	
+	public static void main(String[] args)
+	{
+		String s1=new StringLp5().firsttwo("Hello");
+		System.out.println(s1);
+	}
+}
