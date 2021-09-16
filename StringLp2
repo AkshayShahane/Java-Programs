@@ -1,0 +1,23 @@
+
+/*	Given two String a & b return the result of putting them together
+ * in the order ab-ba eg."Hi" and "Bye" returns "HiByeByeHi"
+ * 
+ * makeAbba("Hi","Bye")? "HiByeByeHi"
+ * makeAbba("Yo","Alice")? "YoAliceAliceYo"
+ */
+
+public class StringLp2 
+{
+	
+	public String makeAbba(String a,String b)
+	{
+		return a+b+b+a;
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+		String s1=new StringLp2().makeAbba("Hi","Bye");
+		System.out.println(s1);
+	}
+}
