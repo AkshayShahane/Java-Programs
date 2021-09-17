@@ -1,0 +1,55 @@
+
+class StringBuffer1
+{
+	void meth1()
+	{
+		String s1=new String("Java");
+		StringBuffer buffer=new StringBuffer("Java");
+		StringBuilder builder=new StringBuilder("Java");
+		System.out.println("String==>"+s1.concat(" is awesome"));
+		System.out.println("String class==>"+s1);
+		System.out.println("stringBuffer class==>"+buffer.append(" is awesome"));
+		System.out.println("StringBuffer class==>"+buffer);
+		System.out.println("StringBuffer class==>"+buffer);
+		System.out.println("Stringbuilder class==>"+builder.append(
+				" is awesome"));
+		System.out.println("StringBuilder class==>"+builder);
+		
+	}
+	
+	void meth2()
+	{
+		String s1=new String("Java");
+		String s2=new String("Java");
+		StringBuffer buffer1=new StringBuffer("Java");
+		StringBuffer buffer2=new StringBuffer("Java");
+		System.out.println("String class==>"+s1.equals(s2));
+		System.out.println("StringBuffer class==>"+buffer1.equals(buffer2));
+		System.out.println(buffer1.toString().equals(buffer2.toString()));
+		
+	}
+	
+	void meth3()
+	{
+		StringBuffer sb=new StringBuffer();
+		System.out.println("Capacity==>"+sb.capacity());
+		sb.append("abcd");
+		System.out.println("length()==>"+sb.length());
+		sb.append("efghijklmnop");
+		System.out.println(sb+" length==>"+sb.length());
+		System.out.println(sb.append("q"));
+		System.out.println(sb.capacity());
+		StringBuffer sb2=new StringBuffer("Java");
+		System.out.println("reverse()==>"+sb2.reverse());
+	}
+	
+	public static void main(String[] args) 
+	{
+		StringBuffer1 obj=new StringBuffer1();
+		obj.meth1();
+		System.out.println("---------------------------");
+		obj.meth2();
+		System.out.println("---------------------------------");
+		obj.meth3();
+	}
+}
