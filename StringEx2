@@ -1,0 +1,30 @@
+
+/*
+
+Given a String return true if the last 2 chars in the String also appear at the
+end of the String such as with edited
+
+	frontAgain("edited")? true
+	frontAgain("edit")? false
+
+*/
+public class StringEx 
+{
+	public boolean firstAgain(String str)
+	{
+		if(str.charAt(0)==str.charAt(str.length()-2) && str.charAt(1)==str.charAt(str.length()-1))
+		{
+			return true;
+		}
+		else
+			return false;
+	}
+	
+	
+	
+	public static void main(String[] args) 
+	{
+		boolean flag=new StringEx().firstAgain("edited");
+		System.out.println(flag);
+	}
+}
