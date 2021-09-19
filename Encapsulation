@@ -1,0 +1,47 @@
+
+public class Encapsulation 
+{
+	private int empId;
+	private String empName;
+	private int empsal;
+	private String empdept;
+	
+	public int getEmpId() {
+		return empId;
+	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+	public String getEmpName() {
+		return empName;
+	}
+	public void setEmpName(String empName) {
+		this.empName = empName;
+		
+	}
+	public int getEmpsal() {
+		
+		return empsal;
+	}
+	public void setEmpsal(int empsal) {
+		if(empsal>30000)
+		{
+			System.out.println("You got Bonus of 5000");
+			this.empsal = 5000+empsal;
+		}
+		
+	}
+	public String getEmpdept() {
+		return empdept;
+	}
+	public void setEmpdept(String empdept) {
+		if(empdept.equals("IT") || empdept.equals("computer") || empdept.equals("it") || empdept.equals("COMPUTER"))
+		{
+			System.out.println("You are legend...");
+			this.empdept = empdept;
+		}
+			
+		
+	}
+	
+}
