@@ -1,0 +1,50 @@
+
+import java.util.Scanner;
+
+public class Encapsulation2 
+{
+	public void meth1()
+	{
+		Scanner sc=new Scanner(System.in);
+		Encapsulation obj=new Encapsulation();
+
+		System.out.println("Please Enter the Employee Id: ");
+		obj.setEmpId(sc.nextInt());
+		
+		System.out.println("Please Enter the Employee Name: ");
+		obj.setEmpName(sc.next());
+		
+		System.out.println("Please Enter the Employee Salary: ");
+		obj.setEmpsal(sc.nextInt());
+		System.out.println(obj.getEmpsal());
+		
+		System.out.println("Please Enter the Employee Department");
+		obj.setEmpdept(sc.next());
+		System.out.println(obj.getEmpdept());
+		
+		System.out.println();
+		System.out.println("****Details****");
+		System.out.println(obj.getEmpId());
+		System.out.println(obj.getEmpName());
+		System.out.println(obj.getEmpsal());
+		System.out.println(obj.getEmpdept());
+		
+	}
+	public void meth2()
+	{
+		Encapsulation obj=new Encapsulation();
+		System.out.println(obj.getEmpId());
+		System.out.println(obj.getEmpName());
+		System.out.println(obj.getEmpsal());
+		System.out.println(obj.getEmpdept());
+	}
+	
+	
+	public static void main(String[] args)
+	{
+		Encapsulation2 obj=new Encapsulation2();
+		obj.meth1();
+		System.out.println("----------------------------------");
+		//obj.meth2();
+	}
+}
