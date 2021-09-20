@@ -1,0 +1,25 @@
+
+/*
+ Explaining case 2: we can hold child class object with a parent class
+ referance, but with that reference we can call only parent class methods
+ ex. classB ob=new classB();
+ */
+
+public class InheritanceEx3 extends InheritanceEx1
+{
+	
+	void meth2()
+	{
+		System.out.println("Java is everything");
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+		InheritanceEx3 obj=new InheritanceEx3();
+		
+		obj.meth1();
+		obj.meth2();
+	}
+	
+}
