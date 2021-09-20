@@ -1,0 +1,21 @@
+
+/*
+Explaining case 1:	we can hold parent class object with parent class
+reference but with that reference we can call only parent class methods
+
+*/
+class InheritanceEx1 
+{
+	void meth1()
+	{
+		System.out.println("Java is awesome");
+	}
+}
+public class InheritanceEx2 extends InheritanceEx1
+{
+	public static void main(String[] args)
+	{
+		InheritanceEx1 obj=new InheritanceEx1();
+		obj.meth1();
+	}
+}
