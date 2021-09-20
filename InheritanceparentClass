@@ -1,0 +1,7 @@
+class InheritanceEx
+{
+	void meth1()
+	{
+		System.out.println("Java is awesome");
+	}
+}
