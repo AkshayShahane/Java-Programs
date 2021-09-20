@@ -1,0 +1,14 @@
+
+/*
+we can not hold parent class object with child class reference,we will be
+getting an complile time error.
+Ex.ClassB bobj=new ClassA();	Compiletime error
+*/
+
+public class InheitanceEx5 extends InheritanceEx1
+{
+	public static void main(String[] args) 
+	{
+		//InheitanceEx5 bobj=new InheitanceEx1();	CE
+	}
+}
