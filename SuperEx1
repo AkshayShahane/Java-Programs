@@ -1,0 +1,12 @@
+
+public class Sample1 
+{
+	public void meth1()
+	{
+		System.out.println("Java is awesome");
+	}
+	Sample1()
+	{
+		System.out.println("Default Consytructor of Sample1");
+	}
+}
