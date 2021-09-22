@@ -1,0 +1,13 @@
+
+public class SuperEx2 extends SuperEx
+{
+	void display()
+	{
+		System.out.println("Hi");
+		super.meth4();
+	}
+	public static void main(String[] args)
+	{
+		new SuperEx2().display();
+	}
+}
