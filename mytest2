@@ -1,0 +1,39 @@
+
+public class mytest2 
+{
+	public final static int meth1()
+	{
+		System.out.println(10);
+		return 10;
+	}
+	private void meth1(int a)
+	{
+		System.out.println(20);
+	}
+	protected void meth1(int a,String s)
+	{
+		System.out.println(30);
+	}
+	void meth1(String s,int a)
+	{
+		System.out.println(40);
+	}
+	
+	public static void main(String[] args)
+	{
+		mytest2 obj=new mytest2();
+		obj.meth1();
+		obj.meth1(500);
+		obj.meth1(500, "Java");
+		obj.meth1("Java is awesome", 500);
+		mytest2.main();
+	}
+	public static void main()
+	{
+		System.out.println("Hi");
+	}
+	public static void main(String s)
+	{
+		System.out.println(s);
+	}
+}
