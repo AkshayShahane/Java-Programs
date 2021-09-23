@@ -1,0 +1,19 @@
+
+public class mytest
+{
+	
+	void meth1()
+	{
+		System.out.println("Hi");
+	}
+	mytest()
+	{
+		//this();		CE
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+		new mytest().meth1();
+	}
+}
