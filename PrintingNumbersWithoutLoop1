@@ -1,0 +1,21 @@
+/*
+WAP to print the numbers from 1 to 100 without using any loop.
+*/
+public class PrintingNumbersWithoutLoop
+{
+	int i=1;
+	public void meth1()
+	{
+		if(i<=100)
+		{
+			System.out.println(i);
+			i++;
+			meth1();
+		}
+	}
+	
+	public static void main(String[] args) 
+	{
+		new PrintingNumbersWithoutLoop().meth1();
+	}
+}
