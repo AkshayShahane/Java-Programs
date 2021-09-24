@@ -1,0 +1,39 @@
+
+/*
+WAP to return true if the user entered number is pallindrome 
+*/
+import java.util.Scanner;
+
+public class pallindrome 
+{
+	public static void main(String[] args) 
+	{
+		boolean flag=new pallindrome().meth1();
+		System.out.println(flag);
+	}
+	
+	boolean meth1()
+	{
+		int rev=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Please, Enter the number: ");
+		int num=sc.nextInt();
+		int temp=num;
+		
+		while(!(temp==0))
+		{
+			rev=rev*10+temp%10;
+			temp=temp/10;
+			
+		}
+		if(num==rev)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
+}
