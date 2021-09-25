@@ -1,0 +1,23 @@
+/*
+ WAP which calculate and print the square of number
+ */
+import java.util.Scanner;
+
+public class test 
+{
+	void meth1()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Please, Enter the Number: ");
+		int num=sc.nextInt();
+		
+		int res=num*num;
+		System.out.println(res);
+	}
+	
+	public static void main(String[] akshay) 
+	{
+		new test().meth1();;
+		
+	}
+}
