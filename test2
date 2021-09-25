@@ -1,0 +1,16 @@
+
+/*This is child class of test which contains the umplementation of
+ * abstract method*/
+
+public class test2 extends test
+{
+	
+	public void meth1()
+	{
+		System.out.println("This is overriding");
+	}
+	public static void main(String[] args)
+	{
+		new test2().meth1();
+	}
+}
