@@ -1,0 +1,26 @@
+/*
+ abstraction demonstration .this is abstract class containing abstract method
+ */
+import java.util.Scanner;
+
+abstract public class test 
+{
+	public abstract void meth1();
+	
+	/*void meth1()
+	{
+		System.out.println("Normal non-static method");
+	}*/
+	static void meth2()
+	{
+		System.out.println("Static method");
+	}
+	test()
+	{
+		System.out.println("Non-Parameterized method");
+	}
+	public static void main(String[] args)
+	{
+		
+	}
+}
