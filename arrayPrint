@@ -1,0 +1,40 @@
+
+/* WAP to get the size of array from user and get that much elements from
+ * user and print it. 
+ */
+import java.util.Scanner;
+
+ class arrPrint 
+{
+	
+	private void show()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Please,Enter the size of array: ");
+		int n=sc.nextInt();
+		
+		while(n<=0 || n>=10)
+		{
+			System.out.println("Please Try again!!!");
+			System.out.println("Please, Enter the size of array: ");
+			n=sc.nextInt();
+		}
+		int[] number=new int[n];
+		for(int i=0;i<=number.length-1;i++)
+		{
+			System.out.println("Enter the "+(i+1)+" value: ");
+			number[i]=sc.nextInt();
+		}
+		System.out.println("---------------------");
+		
+		for(int x:number)
+		{
+			System.out.println(x);
+		}
+		
+	}	
+	public static void main(String[] args)
+	{
+		new arrPrint().show();
+	}
+}
