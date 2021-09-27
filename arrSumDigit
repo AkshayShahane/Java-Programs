@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+
+/*WAP to do addition of each digit of number entered by user*/
+public class arrSumDigit 
+{
+	public static void main(String[] args) 
+	{
+		int sum=0,rev;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Please,Enter the Number: ");
+		int num=sc.nextInt();
+		while(!(num==0))
+		{
+			rev=num%10;
+			sum=sum+rev;
+			num=num/10;
+		}
+		System.out.println(sum);
+	}
+}
