@@ -1,0 +1,47 @@
+/*WAP to check whether enterd number is armstrong or not*/
+import java.util.Scanner;
+public class armstrong 
+{
+	int sum=0;
+	private void armstrng()
+	{
+		int cnt=0,temp,temp2,num,rem=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Please, Enter the value: ");
+		num=sc.nextInt();
+		temp=num;
+		temp2=num;
+		while(temp!=0)
+		{
+			cnt++;
+			temp=temp/10;
+		}
+		
+		while(temp2!=0)
+		{
+			int mult=1;
+			rem=temp2%10;
+			temp2=temp2/10;
+			
+			for(int i=1;i<=cnt;i++)
+			{
+				mult=mult*rem;
+			}
+			sum=sum+mult;
+		}
+		
+		if(num==sum)
+		{
+			System.out.println("Given number is Armstrong");
+		}
+		else
+		{
+			System.out.println("Given number is Not Armstrong");
+		}
+	}
+	
+	public static void main(String[] args) 
+	{
+		new armstrong().armstrng();
+	}
+}
