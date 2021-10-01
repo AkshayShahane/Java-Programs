@@ -1,0 +1,21 @@
+
+/*This is basic multithreading program*/
+
+public class threading1 extends Thread
+{
+	public void run()
+	{
+		for(int i=1;i<=5;i++)
+		{
+			System.out.println("run() executed===>"+i);
+		}
+	}
+	public static void main(String[] args)
+	{
+		threading1 obj=new threading1();
+		Thread t1=new Thread(obj);
+		Thread t2=new Thread(obj);
+		t1.start();
+		t2.start();
+	}
+}
