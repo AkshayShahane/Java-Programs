@@ -1,0 +1,27 @@
+
+import java.util.Scanner;
+
+public class test implements Runnable
+{
+	public void run()
+	{
+		String name=Thread.currentThread().getName();
+		for(int i=1;i<4;i++)
+		{
+			System.out.println(name+" run() executed==>"+i);
+		}
+	}
+	public static void main(String[] args) 
+	{
+		test obj=new test();
+		Thread t1=new Thread(obj);
+		Thread t2=new Thread(obj);
+		t1.setName("Romeo-Thread");
+		t1.setPriority(10);
+		t1.start();
+		
+		t2.setName("Juliet-Thread");
+		t2.setPriority(2);
+		t2.start();
+	}
+}
