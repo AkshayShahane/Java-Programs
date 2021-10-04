@@ -1,0 +1,42 @@
+
+import java.util.Scanner;
+
+public class exceptionHandling3
+{
+	protected void display()
+	{
+		String s=null;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Start");
+		try
+		{
+			System.out.println("Please,Enter the value: ");
+			System.out.println(20/sc.nextInt());
+			System.out.println("String s===>"+s.length());
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("----------------");
+			System.out.println("Arithmetic Exception catch...Don't Worry"
+					+ "I can handle it!!!");
+			System.out.println("---------------------");
+		}
+		catch(NullPointerException e)
+		{
+			System.out.println("----------------");
+			System.out.println("Null Pointer Exception catch...Don't Worry"
+					+ "I can handle it!!!");
+			System.out.println("---------------------");
+		}
+		finally
+		{
+			System.out.println("finally block is executing");
+		}
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+		new exceptionHandling3().display();
+	}
+}
