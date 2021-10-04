@@ -1,0 +1,38 @@
+
+/* This is the demonstration of basic Exception Handling*/
+
+import java.util.Scanner;
+
+public class exceptionHandling 
+{
+	
+	public void meth1()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Start");
+		try
+		{
+			System.out.println("try block executing");
+			System.out.println("Please enter Number: ");
+			System.out.println(20/sc.nextInt());
+			System.out.println("try block execution completed");
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("-------------------------");
+			System.out.println("Error Handled...Don'Worry!!!");
+		}
+		finally
+		{
+			System.out.println("-------------------------");
+			System.out.println("finally block executed...");
+		}
+		System.out.println("End");
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+		new exceptionHandling().meth1();
+	}
+}
