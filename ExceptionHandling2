@@ -1,0 +1,38 @@
+
+/*This is the basic program of exception handling*/
+
+import java.util.Scanner;
+
+public class exceptionHandling2 
+{
+	private void display()
+	{
+		String s=null;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Start");
+		try
+		{
+			System.out.println("try block executing");
+			System.out.println("Please,Enter the number: ");
+			System.out.println(20/sc.nextInt());
+			System.out.println("String Length==>"+s.length());
+		}
+		catch(Exception e)
+		{
+			System.out.println("--------------------------");
+			System.out.println("Error catch..Don't Worry I can Handle");
+			System.out.println("------------------------------");
+		}
+		finally
+		{
+			System.out.println("finally block executed");
+		}
+		System.out.println("End");
+	}
+	
+	
+	public static void main(String[] args)
+	{
+		new exceptionHandling2().display();
+	}
+}
