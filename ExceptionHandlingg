@@ -1,0 +1,31 @@
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+/*This is an example of throw in exception handling*/
+
+public class throwKeyword 
+{
+	int avl_amt=5000;
+	public void with_draw(int with_draw)
+	{
+		if(avl_amt<with_draw)
+		{
+			throw new RuntimeException("Insufficient Funds");
+		}
+		else
+		{
+			System.out.println("Transaction Successfull..");
+		}
+	}
+	public void FileOperation() throws FileNotFoundException
+	{
+		FileReader fr=new FileReader("D:\\abc.txt");
+	}
+	public static void main(String[] args) throws FileNotFoundException
+	{
+		throwKeyword aobj=new throwKeyword();
+		aobj.with_draw(10000);
+		aobj.FileOperation();
+	}
+}
