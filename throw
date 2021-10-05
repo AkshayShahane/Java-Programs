@@ -1,0 +1,22 @@
+
+/*This is an example of throw in exception handling*/
+
+public class throwKeyword 
+{
+	int avl_amt=5000;
+	public void with_draw(int with_draw)
+	{
+		if(avl_amt<with_draw)
+		{
+			throw new RuntimeException("Insufficient Funds");
+		}
+		else
+		{
+			System.out.println("Transaction Successfull..");
+		}
+	}
+	public static void main(String[] args) 
+	{
+		new throwKeyword().with_draw(10000);
+	}
+}
