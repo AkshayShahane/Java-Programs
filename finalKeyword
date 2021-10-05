@@ -1,0 +1,18 @@
+/*This is demonstration of final keyword*/
+public final class finalKeyword 	//This class can't be inherit bcoz
+									//it declare as final
+{
+	final int a=10;				//this is constant
+	final public void display()	//final method can't overridden
+	{
+		System.out.println(a);
+		//a++;	CE
+	}
+	
+	
+	public static void main(String[] args) 
+	{
+		finalKeyword obj=new finalKeyword();
+		obj.display();
+	}
+}
