@@ -1,0 +1,46 @@
+/*
+5 9 12 14 15 
+4 8 11 13  
+3 7 10   
+2 6    
+1
+*/
+public class pp41 
+{
+	public void meth1()
+	{
+		int k;
+		for(int i=5;i>=1;i--)
+		{
+			k=i;
+			for(int j=5;j>=1;j--)
+			{
+				if(j>=6-i)
+				{
+					if(j<5)
+					{
+						k=k+j;
+						System.out.print(k+" ");
+					}
+					else
+					{
+						System.out.print(k+" ");
+					}
+					
+				}
+				else
+				{
+					System.out.print(" ");
+				}
+					
+			}
+			System.out.println();
+		}
+	}
+	
+	public static void main(String[] args) 
+	{
+		pp41 obj=new pp41();
+		obj.meth1();
+	}
+}
