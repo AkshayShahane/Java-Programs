@@ -1,0 +1,56 @@
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.Scanner;
+public class iostreamex4
+{
+	
+	public void fileOperation1() throws Exception
+	{
+		FileReader fr=new FileReader("D:\\other\\source.txt");
+		int i;
+		while((i=fr.read())!=-1)
+		{
+			System.out.print((char)i);
+		}
+		System.out.println();
+		System.out.println();
+		System.out.println("<<<Reading Completed>>>");
+		fr.close();
+	}
+	public void fileOperation2() throws Exception
+	{
+		FileWriter fw=new FileWriter("D:\\other\\destination.txt");
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Please, Enter String: ");
+		String s=sc.nextLine();
+		fw.write(s);
+		fw.close();
+		System.out.println("Done");
+	}
+	public void fileOperation3() throws Exception
+	{
+		FileReader fr=new FileReader("D:\\other\\source.txt");
+		FileWriter fw=new FileWriter("D:\\other\\destination.txt");
+		int i;
+		while((i=fr.read())!=-1)
+		{
+			fw.write((char)i);
+		}
+		System.out.println("Done");
+		fr.close();
+		fw.close();
+	}
+	public static void main(String[] args) throws Exception
+	{
+		iostreamex4 obj=new iostreamex4();
+		System.out.println("Start");
+		System.out.println("---------------------------");
+		obj.fileOperation1();
+		obj.fileOperation2();
+		obj.fileOperation3();
+		System.out.println("---------------------------");
+		System.out.println("End");
+		
+	}
+}
