@@ -1,0 +1,33 @@
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.Scanner;
+
+public class iostreamex6 
+{
+	public void filOperation1() throws Exception
+	{
+		FileReader fr=new FileReader("D:\\other\\first.txt");
+		int i;
+		while((i=fr.read())!=-1)
+		{
+			System.out.print((char)i);
+		}
+		fr.close();
+		System.out.println();
+		System.out.println("<<<Done>>>");
+	}
+	public void filOperation2() throws Exception
+	{
+		FileWriter fw=new FileWriter("D:\\other\\last.txt");
+		fw.write("TWWWW");
+		fw.close();
+	}
+
+	public static void main(String[] args) throws Exception
+	{
+		iostreamex6 obj=new iostreamex6();
+		obj.filOperation1();
+		obj.filOperation2();
+		
+	}
+}
