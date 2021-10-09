@@ -1,0 +1,31 @@
+
+import java.util.Scanner;
+
+public class exceptionMethods
+{
+	void exceptionMethods()
+	{
+		int a=60;
+		Scanner sc=new Scanner(System.in);
+		try
+		{
+			System.out.println("Please Enter the Value: ");
+			System.out.println("Output===>"+a/sc.nextInt());
+			
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println(e.toString());
+		}
+		finally
+		{
+			System.out.println("Not Confirmed Exception Occur or Not..");
+		}
+		System.out.println("Final Output");
+	}
+	public static void main(String[] args)
+	{
+		new exceptionMethods().exceptionMethods();
+	}
+	
+}
