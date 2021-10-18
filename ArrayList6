@@ -1,0 +1,24 @@
+
+/*In this used generic Class and some ArrayList functions */
+import java.util.ArrayList;
+public class ArrayList5
+{
+	public static void main(String[] args) 
+	{
+		ArrayList<Integer> al=new ArrayList<Integer>();
+		al.add(65);
+		al.add(45);
+		al.add(20);
+		al.add(65);
+		System.out.println("Retreiving Elements");
+		for(Integer x:al)
+		{
+			System.out.println(x);
+		}
+		al.add(1,656);
+		System.out.println(al);
+		al.remove(3);
+		System.out.println(al);
+	}
+	
+}
