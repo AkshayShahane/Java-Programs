@@ -1,0 +1,32 @@
+
+/*Create Vector and add elements and Reteriving Elements of Vector using Iterator Interface*/
+import java.util.*;
+
+public class Vector2
+{
+	public void display()
+	{
+		Vector v=new Vector();
+		v.add(10);
+		v.add("Java");
+		v.add(null);
+		v.add(true);
+		v.add(10);
+		v.add(10.3);
+		System.out.println(v);
+		System.out.println("=======================================");
+		System.out.println("Reteriving Elements of Vector using Iterator Interface");
+		Iterator i=v.iterator();
+		
+		while(i.hasNext())
+		{
+			System.out.println(i.next());
+		}
+	}
+	
+	public static void main(String[] args)
+	{
+		Vector2 obj=new Vector2();
+		obj.display();
+	}
+}
