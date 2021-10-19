@@ -1,0 +1,29 @@
+
+import java.util.*;
+public class Vector3 
+{
+	private void  vector_method()
+	{
+		Vector v=new Vector();
+		v.add(45);
+		v.add(65);
+		v.add(88);
+		v.add(null);
+		System.out.println(v);
+		System.out.println("================================");
+		System.out.println("Reteriving Elements using ListIterator");
+		ListIterator li=v.listIterator();
+		while(li.hasNext())
+		{
+			System.out.println(li.next());
+		}
+		System.out.println("===================================");
+		
+		
+	}
+	public static void main(String[] args)
+	{
+		Vector3 obj=new Vector3();
+		obj.vector_method();
+	}
+}
