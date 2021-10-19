@@ -1,0 +1,32 @@
+
+/*This is the program for vector */
+import java.util.*;
+public class Vector1 
+{
+	public static void main(String[] args)
+	{
+		 Vector v=new Vector();
+		 //Vector is allowed heterogeneous elements
+		 v.add(10);
+		 v.add("XYZ");
+		 v.add("Java is Awesome");
+		 v.add(45.3);
+		 v.add(null);
+		 v.add(true);
+		 v.add(10);
+		 v.add(185);
+		 System.out.println(v);
+		 //Vector allows duplicates
+		 //Vector allows null values
+		 //Default Capacity of Vector is 10
+		 //It's Capacity will increase by double
+		 //It is available from 1.0v (Legacy Class)
+		 System.out.println("=============================");
+		 System.out.println("Reteriving the elements using enumeration Interface");
+		 Enumeration e=v.elements();
+		 while(e.hasMoreElements())
+		 {
+			 System.out.println(e.nextElement());
+		 }
+	}
+}
