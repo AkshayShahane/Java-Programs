@@ -1,0 +1,22 @@
+import java.util.*;
+public class LinkedHashSetex1
+{
+	public static void main(String[] args)
+	{
+		LinkedHashSet hs=new LinkedHashSet();
+		hs.add(45);
+		hs.add(true);
+		hs.add(32);
+		hs.add(41.6);
+		hs.add(null);
+		hs.add(45);
+		System.out.println(hs);
+		System.out.println("================================");
+		
+		Iterator i=hs.iterator();
+		while(i.hasNext())
+		{
+			System.out.println(i.next());
+		}
+	}
+}
