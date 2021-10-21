@@ -1,0 +1,33 @@
+import java.util.*;
+public class LinkedList1
+{
+	public static void main(String[] args) 
+	{
+		LinkedList ll=new LinkedList();
+		ll.add(78);
+		ll.add(78);
+		ll.add(65);
+		ll.add("Str");
+		ll.add(true);
+		System.out.println(ll);
+		/*
+		 * Insertion Order is maintained
+		 * Duplicates are allowed
+		 * null is allowed
+		 * Heterogeneous elements are allowed
+		 * available from java 1.2
+		 * Default capacity is 0
+		 * After size reached it becomes double
+		 * It is not synchrobized
+		 */
+		ll.addFirst(999);
+		ll.addLast(777);
+	
+		System.out.println(ll);
+		ll.removeFirst();
+		ll.removeLast();
+		System.out.println(ll);
+	System.out.println(ll.getFirst());
+	System.out.println(ll.getLast());
+	}
+}
