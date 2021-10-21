@@ -1,0 +1,54 @@
+import java.util.*;
+
+public class ArrayList2 
+{
+	
+	public void display()
+	{
+		ArrayList al=new ArrayList();
+		al.add(10);
+		al.add(78);
+		al.add(null);
+		al.add(true);
+		al.add("Java is Awesome");
+		System.out.println("ArrayList==>"+al.size());
+		al.remove(1);
+		System.out.println(al);
+		al.remove(null);
+		System.out.println(al);
+		al.add(1,65);
+		System.out.println(al);
+		System.out.println(al.get(3));
+		System.out.println("Retriving All Elements");
+		Iterator i=al.iterator();
+		while(i.hasNext())
+		{
+			System.out.println(i.next());
+		}
+		
+	}
+	
+	public void show()
+	{
+		ArrayList<Integer> mn=new ArrayList<Integer>();
+		mn.add(45);
+		//mn.add("po");
+		//mn.add(78.0);
+		//mn.add(true);
+		mn.add(45);
+		mn.add(78);
+		System.out.println("=============================");
+		System.out.println(mn);
+		Iterator i=mn.iterator();
+		while(i.hasNext())
+		{
+			System.out.println(i.next());
+		}
+	}
+	public static void main(String[] args)
+	{
+		ArrayList2 obj=new ArrayList2();
+		obj.display();
+		obj.show();
+	}
+}
