@@ -1,0 +1,29 @@
+/*This is the Implementation of LinkedHashSet*/
+import java.util.*;
+public class LinkedHashSet1 
+{
+		public static void main(String[] args)
+		{
+			LinkedHashSet lhs=new LinkedHashSet();
+			lhs.add(78);
+			lhs.add(true);
+			lhs.add(null);
+			lhs.add(78.888);
+			lhs.add("JAVA");
+			lhs.add(78);
+			System.out.println(lhs);
+			/*
+			 * Insertion Order is maintainer
+			 * null is allowed
+			 * Duplicates are not allowed
+			 * available from java 1.4v
+			 * Heterogeneous elements are allowed
+			 * default capacity is 16
+			 * after size get full it become double
+			 * not synchronozed by dEFAULT
+			 * 
+			 */
+			lhs.remove("JAVA");
+			System.out.println(lhs);
+		}
+}
