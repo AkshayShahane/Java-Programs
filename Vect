@@ -1,0 +1,34 @@
+import java.util.*;
+public class Vector1 
+{
+	public static void main(String[] args)
+	{
+		Vector v=new Vector();
+		//To add elements in Vector
+		v.add(45);	//This method present inside List Interface
+		v.add(45);
+		v.add(true);
+		v.add("Only Java");
+		v.add(null);
+		v.add(96.54);
+		
+		/**
+		 * Insertion Order is maintained
+		 * Duplicates are allowed
+		 * Null is allowed
+		 * Heterogeneous elements are allowed
+		 * available from java 1.0 v (legacy class)
+		 * it is synchronized by default
+		 * default capacity is 10
+		 * after 10 size become double the current capacity
+		 */
+		v.addElement(65);	//This method present inside Vector class
+		//To remove elements from vector
+		v.removeElement(null);
+		v.remove(true);
+		System.out.println(v);
+		System.out.println(v.elementAt(1));
+		System.out.println(v.lastElement());
+		System.out.println(v.firstElement());
+	}
+}
