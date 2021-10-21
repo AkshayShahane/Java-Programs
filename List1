@@ -1,0 +1,48 @@
+/*This proram is about ArrayList and their methods*/
+import java.util.*;
+public class ArrayList1 
+{
+	public static void main(String[] args)
+	{
+		ArrayList al=new ArrayList();
+		//To add element 
+		al.add(10);
+		al.add(10);
+		al.add("Java");
+		al.add(true);
+		al.add(null);
+		al.add(89.45);
+		/*
+		 * Insertion Order is maintained
+		 * Dulplicates are allowed
+		 * Heterogeneous elements are allowed
+		 * null is allowed
+		 * available from java 1.2v
+		 * default capacity is 10
+		 * after 10 size will become half the current capacity
+		 * it is not synchronized by default */
+		System.out.println("ArrayList===>"+al);
+		
+		//To find the size of an arraylist then
+		System.out.println("Array Size==>"+al.size());
+		//To remove an element using index value
+		al.remove(2);
+		System.out.println(al);
+		//To remove the elements by passing element directly
+		al.remove(null);
+		System.out.println(al);
+		//To get an element of particular index
+		System.out.println(al.get(3));
+		
+		
+		/*
+		 	add(value);
+		 	add(index,value);
+		 	size();
+		 	remove(index);
+		 	remove(object);
+		 	get();
+		 */
+		
+	}
+}
