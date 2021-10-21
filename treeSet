@@ -1,0 +1,26 @@
+import java.util.*;
+public class TreeSet1 
+{
+	public static void main(String[] args)
+	{
+		TreeSet ts=new TreeSet();
+		ts.add(45);
+		//ts.add("Java");
+		//ts.add(null);
+		ts.add(45);
+		ts.add(8888);
+		ts.add(666);
+		ts.add(1201);
+		System.out.println(ts);
+		/*
+		 * Insertion order is not maintained
+		 * Duplicates are not allowed
+		 * null not allowed
+		 * heterogeneous element is not allowed
+		 * available from java 1.2v
+		 * default capacity is 16
+		 * after that it brcome double
+		 * not synchronized by default
+		 * */
+	}
+}
