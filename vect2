@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class Vector2 
+{
+	private void meth1()
+	{
+		Vector<Float> v=new Vector<Float>();
+		//v.add(45);
+		v.add(45.21f);
+		v.addElement(78.12f);
+		v.addElement(61.82f);
+		v.addElement(963.45f);
+		v.addElement(456.54f);
+		//v.addElement("STr");
+		System.out.println(v);
+		v.remove(1);
+		System.out.println(v);
+		v.removeElement(61.82f);
+		System.out.println(v);
+		System.out.println(v.elementAt(1));
+		System.out.println(v.firstElement());
+		System.out.println(v.lastElement());
+	}
+	
+	public void meth2()
+	{
+		System.out.println("Completed");
+	}
+	public static void main(String[] args)
+	{
+		Vector2 obj=new Vector2();
+		obj.meth1();
+		obj.meth2();
+	}
+}
