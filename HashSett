@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class HashSet1
+{
+	public static void main(String[] args) 
+	{
+		HashSet hs=new HashSet();
+		//To add elements in HashSet
+		hs.add(455);
+		hs.add(99);
+		hs.add(455);
+		hs.add("Java");
+		hs.add(null);
+		/*
+		 * Insertion Order is not maintained
+		 * Duplicates are not allowed
+		 * Not Synchronized by default
+		 * Null is allowed
+		 * available from java 1.2v
+		 * Default Capacity is 16
+		 * Size become double after size reached
+		 */
+		
+		System.out.println(hs);
+		//To remove Elements from HashSet
+		hs.remove(99);
+		System.out.println(hs);
+		hs.removeAll(hs);
+		System.out.println(hs);
+	}
+}
