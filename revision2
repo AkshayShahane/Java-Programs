@@ -1,0 +1,22 @@
+
+/*WAP to print the even numbers from 1 to 100 in decresing order*/
+public class s2 
+{
+	public void meth1()
+	{
+		System.out.println("***Even Number***");
+		System.out.println("===============================");
+		for(int i=100;i>=1;i--)
+		{
+			if(i%2==0)
+			{
+				System.out.println(i);
+			}
+		}
+	}
+	public static void main(String[] args) 
+	{
+		s2 obj=new s2();
+		obj.meth1();
+	}
+}
