@@ -1,0 +1,21 @@
+
+/*WAP to print the odd number from 1 to 100 in increasing order*/
+public class s3 
+{
+	private void meth1()
+	{
+		System.out.println("Odd Numbers from 1 to 100 in ascending order");
+		for(int i=1;i<=100;i++)
+		{
+			if(i%2!=0)
+			{
+				System.out.println(i);
+			}
+		}
+	}
+	public static void main(String[] args)
+	{
+		s3 obj=new s3();
+		obj.meth1();
+	}
+}
