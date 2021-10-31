@@ -1,0 +1,32 @@
+
+
+import java.util.*;
+
+public class practise6 
+{
+	public static void main(String[] args)
+	{
+		Vector<String> v=new Vector<String>();
+		v.add("JAVA");
+		v.add("POO");
+		v.add("NareshIt");
+		v.add("DurgaSoft");
+		//v.add(87);
+		v.addElement("Kishan Sir");
+		v.addElement("Boy");
+		v.remove(5);
+		System.out.println(v);
+		
+		System.out.println("=================================");
+		System.out.println("Reteriving Elements: ");
+		System.out.println("=================================");
+		Iterator i=v.iterator();
+		while(i.hasNext())
+		{
+			System.out.println(i.next());
+		}
+		System.out.println("=================================");
+		
+	}
+}
+//Using Generic String type
