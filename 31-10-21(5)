@@ -1,0 +1,25 @@
+import java.util.*;
+public class practise5 
+{
+	public static void main(String[] args)
+	{
+		ArrayList<Integer> al=new ArrayList<Integer>();
+		al.add(87);
+		al.add(87);
+		//al.add("JAVA");
+		al.add(null);
+		al.remove(1);
+		System.out.println(al);
+	}
+}
+//USing generics
+/*
+ * we can only store homogeneous elements
+ * duplicates are allowed
+ * heterogeneous are not allowed
+ * insertion order is maintained
+ * Other all properties it follow of ArrayList
+ *
+ * 
+ * */
+ 
