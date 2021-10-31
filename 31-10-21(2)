@@ -1,0 +1,46 @@
+package CollectionPract;
+import java.util.*;
+public class practise2
+{
+	public static void main(String[] args)
+	{
+		Vector v=new Vector();
+		v.addElement(78);
+		v.add(85);
+		v.addElement("Java");
+		v.addElement(true);
+		v.addElement(null);
+		System.out.println(v);
+		System.out.println("++++++++++++++++++++++++++++==");
+		Iterator i=v.iterator();
+		while(i.hasNext())
+		{
+			System.out.println(i.next());
+		}
+		System.out.println("++++++++++++++++++++++++++++==");
+		for(int a=0;a<v.size();a++)
+		{
+			System.out.println(v.get(a));
+		}
+		System.out.println("++++++++++++++++++++++++++++==");
+		v.removeElement(78);
+		System.out.println(v);
+		System.out.println("++++++++++++++++++++++++++++==");
+		v.removeAllElements();
+		System.out.println(v);
+		System.out.println("++++++++++++++++++++++++++++==");
+	}
+}
+
+/*
+ * Insertion order is maintained
+ * Duplicates are allowed
+ * Null is allowed
+ * Default size is 10
+ * after that it become double
+ * available from java 1.0 (legacy class)
+ *Heterogeneous elements are allowed
+ *Synchronized by default 
+ *
+ * */
+ */
