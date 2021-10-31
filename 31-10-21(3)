@@ -1,0 +1,71 @@
+package CollectionPract;
+
+import java.util.*;
+public class practise1 
+{
+	public static void main(String[] args) 
+	{
+		ArrayList al=new ArrayList();
+		al.add(87);
+		al.add(96);
+		al.add(87);
+		al.add("JAVA");
+		al.add(null);
+		al.add(true);
+		al.add(56.24);
+		System.out.println(al);
+		System.out.println(al.size());
+		al.add(1,999);
+		System.out.println();
+		System.out.println(al);
+		al.remove(1);
+		System.out.println();
+		System.out.println(al);
+		al.add(1,999);
+		System.out.println();
+		System.out.println(al);
+		//al.remove(999);
+		System.out.println(al.get(2));
+		
+		System.out.println("Reteriving elements using for");
+		
+		for(int i=0;i<al.size();i++) // for loop (Method-1)
+		{
+			System.out.println(al.get(i));
+		}
+		System.out.println("==========================");
+		
+		for(Object x:al)	//for-each loop    (Method-2)
+		{
+			System.out.println(x);
+		}
+		System.out.println("===========================");
+		
+		Iterator i=al.iterator();
+		
+		while(i.hasNext())
+		{
+			System.out.println(i.next());
+		}
+		System.out.println("############################3");
+		ListIterator li=al.listIterator();
+		while(li.hasPrevious())
+		{
+			System.out.println(li.previous());
+		}
+	}
+}
+
+
+/*
+ * Insertion order is maintained
+ * Duplicates are allowed
+ * Null is allowed
+ * Heterogeneous elements are allowed
+ * available from java 1.2v
+ * Default size is 10
+ * after default size it increases as current size * half
+ * Not synchronized by default
+ * 
+ * */
+ */
