@@ -1,0 +1,44 @@
+package CollectionPract;
+
+import java.util.*;
+public class practise3 
+{
+	public static void main(String[] args) 
+	{
+		LinkedList ll=new LinkedList();
+		ll.addFirst(78);
+		ll.addFirst(99);
+		ll.addLast(21);
+		ll.addLast("JAVA");
+		ll.addLast(true);
+		ll.addLast(null);
+		System.out.println(ll);
+		System.out.println(ll.getFirst());
+		System.out.println(ll.getLast());
+		ll.removeFirst();
+		System.out.println(ll);
+		ll.removeLast();
+		System.out.println(ll);
+	}
+}
+/*
+ * 	addFirst(element)
+ * 	addLast(element)
+ * 	getFirst(element)
+ * 	getLast(element)
+ * 	removeFirst(element)
+ * 	removeLast(element)
+ * 
+ * 
+ * 
+ * Insertion order is maintained
+ * Duplicates are allowed
+ * null is allowed
+ * Heterogeneous elements are allowed
+ * available from java 1.2v
+ * default size is 0
+ * after that it become double
+ * Not synchronized
+ * 
+ * 
+ * */
