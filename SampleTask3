@@ -1,0 +1,29 @@
+package Task;
+
+/*WAP to check whether we can write nested method or not*/
+public class t3 
+{
+	
+	public void display()
+	{
+		System.out.println("HI");
+		public void meth2()
+		{
+				System.out.println("Hello");
+		}
+	}
+	
+	public static void main(String[] args)
+	{
+		new t3().display();
+	}
+}
+
+
+/*Conclusion is we can not write nested method in java
+ * 
+ * 
+ * Java does not support “directly” nested methods. Many functional programming languages 
+ * support method within method. But you can achieve nested method functionality in Java 7 
+ * or older version by define local classes, class within method so this does compile*/
+ */
