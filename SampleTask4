@@ -1,0 +1,23 @@
+
+/*WAP Take values of length and bredth of a rectangle from parameterized method and
+ * check if it is square or not*/
+public class t4 
+{
+	public void meth1(int l,int b)
+	{
+		if(l==b)
+		{
+			System.out.println("This is square");
+		}
+		else
+		{
+			System.out.println("This is not square");
+		}
+	}
+	
+	public static void main(String[] args)
+	{
+		t4 aobj=new t4();
+		aobj.meth1(12,21);
+	}
+}
