@@ -1,0 +1,26 @@
+/*A shop will give discount of 10% if the cost of purchased quantity is 
+ * more than 1000.Take a parameterized method which gives the quantity
+ * Suppose, one unit will cost 100.Judege and print total cost for user*/
+public class t5 
+{
+	int meth1(int qty)
+	{
+		if(qty>=1000)
+		{
+			int dis=(qty*10)/100;
+			int result=qty-dis;
+			return result;
+		}
+		else
+		{
+			System.out.println("Sorry!!! you will not get discount");
+			int result=qty+0;
+			return result;
+		}
+	}
+	public static void main(String[] args) 
+	{
+		t5 aobj=new t5();
+		System.out.println("Your final Bill is==> "+aobj.meth1(8900));
+	}
+}
