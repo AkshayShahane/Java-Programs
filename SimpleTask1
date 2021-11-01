@@ -1,0 +1,25 @@
+
+/*WAP to print biggest of 3 numbers*/
+public class t1
+{
+	public void meth1(int a,int b,int c)
+	{
+		if(a>b && a>c)
+		{
+			System.out.println("a is greater");
+		}
+		else if(b>a && b>c)
+		{
+			System.out.println("b is greater ");
+		}
+		else
+		{
+			System.out.println("c is greater");
+		}
+	}
+	public static void main(String[] args) 
+	{
+		t1 obj=new t1();
+		obj.meth1(185,87,596);
+	}
+}
