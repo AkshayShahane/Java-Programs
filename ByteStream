@@ -1,0 +1,50 @@
+package Samples;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+public class test
+{
+	public void meth1() throws Exception
+	{
+		FileInputStream fis=new FileInputStream("D:\\other\\first.txt");
+		int i;
+		System.out.println("Connection Created");
+		while((i=fis.read())!=-1)
+		{
+			System.out.print((char)i);
+		}
+		System.out.println();
+		System.out.println("Task Completed");
+		fis.close();
+	}
+	public void meth2() throws Exception
+	{
+		FileOutputStream fos=new FileOutputStream("D:\\other\\last.txt");
+		System.out.println("Connection Created");
+		String s="I Love Java very much";
+		byte arr[]=s.getBytes();
+		fos.write(arr);
+		System.out.println("Data written in to the file");
+		fos.close();
+	}
+	public void meth3() throws Exception
+	{
+		FileInputStream fis=new FileInputStream("D:\\other\\pic1.jpg");
+		FileOutputStream fos=new FileOutputStream("D:\\other\\pic2.jpg");
+		System.out.println("Connection Created");
+		int i;
+		while((i=fis.read())!=-1)
+		{
+			fos.write(i);
+		}
+		fis.close();
+		fos.close();
+		System.out.println("Data Copied");
+	}
+	public static void main(String[] args) throws Exception
+	{
+		//new test().meth1();
+		//new test().meth2();
+		new test().meth3();
+	}
+}
