@@ -1,0 +1,24 @@
+package pack2;
+
+public class reversenum
+{
+	public void operation()
+	{
+		int a=95671;
+		int rem=0,rev=0;
+		
+		while(a!=0)
+		{
+			rem=a%10;
+			rev=(rev+rem)*10;
+			a=a/10;
+		}
+		rev=rev/10;
+		System.out.println(rev);
+	}
+	public static void main(String[] args) 
+	{
+		reversenum obj=new reversenum();
+		obj.operation();
+	}
+}
