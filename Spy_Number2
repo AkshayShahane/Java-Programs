@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Spy_Number2 
+{
+	int a,rem=0,sum=0,prod=1;
+	Scanner sc=new Scanner(System.in);
+	static
+	{
+		System.out.println("***Check Spy Number***");
+		System.out.println("===================================");
+	}
+	protected void Spy_operation()
+	{
+		System.out.println("Enter the Number to check Spy-Number: ");
+		int num=sc.nextInt();
+		while(num!=0)
+		{
+			rem = num % 10;
+			sum = sum + rem;
+			prod = prod * rem;
+			num = num / 10;
+		}
+		if(sum==prod)
+		{
+			System.out.println("===================================");
+			System.out.println("Entered Number is Spy-Number");
+			System.out.println("===================================");
+		}
+		else
+		{
+			System.out.println("===================================");
+			System.out.println("Enterd Number is Not a Spy-Number");
+			System.out.println("===================================");
+		}
+	}
+	public static void main(String[] args) 
+	{
+		Spy_Number2 obj=new Spy_Number2();
+		obj.Spy_operation();
+	}
+}
