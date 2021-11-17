@@ -1,0 +1,40 @@
+/*WAP to check whether the number is neon number or not
+ * Neon number is a number who's square value's sum is equal to the number 
+ * itself
+ * In total 0 to 100000 only 3 Neon Number is there i.e 0,1,9*/
+public class Neon_Number 
+{
+	int num=9,rem,sum;
+	
+	public Neon_Number()
+	{
+		System.out.println("***Check Neon Number***");
+	}
+	public void checkNeon()
+	{
+		int sqr = num * num;
+		while(sqr!=0)
+		{
+			rem = sqr % 10;
+			sum = sum + rem;
+			sqr =sqr / 10;
+		}
+		if(sum==num)
+		{
+			System.out.println("=================================");
+			System.out.println("Given Number is Neon Number");
+			System.out.println("=================================");
+		}
+		else
+		{
+			System.out.println("=================================");
+			System.out.println("Given Number is Not Neon Number");
+			System.out.println("=================================");
+		}
+	}
+	public static void main(String[] args)
+	{
+		Neon_Number obj=new Neon_Number();
+		obj.checkNeon();
+	}
+}
