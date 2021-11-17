@@ -1,0 +1,18 @@
+
+public class factorial_number 
+{
+	int num=5,fact=1;
+	public void meth1()
+	{
+		for(int i=1;i<=num;i++)
+		{
+			fact=fact*i;
+		}
+		System.out.println("Factorial Of Number is==>"+fact);
+	}
+	public static void main(String[] args) 
+	{
+		factorial_number obj=new factorial_number();
+		obj.meth1();
+	}
+}
