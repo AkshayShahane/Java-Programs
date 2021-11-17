@@ -1,0 +1,41 @@
+import java.util.*;
+public class Neon_Number2 
+{
+	Scanner sc=new Scanner(System.in);
+	private Neon_Number2()
+	{
+		System.out.println("***Check Neon Number***");
+		System.out.println("================================");
+	}
+	
+	private void check_neon_method()
+	{
+		int rem=0,sum=0;
+		System.out.println("Enter the Number to Check Neon Number: ");
+		int num=sc.nextInt();
+		int scr=num*num;
+		while(scr!=0)
+		{
+			rem=scr%10;
+			sum=sum+rem;
+			scr=scr/10;
+		}
+		if(sum==num)
+		{
+			System.out.println("================================");
+			System.out.println("Enterd Number is Neon Number");
+			System.out.println("================================");
+		}
+		else
+		{
+			System.out.println("================================");
+			System.out.println("Enterd Number is Not Neon Number");
+			System.out.println("================================");
+		}
+	}
+	public static void main(String[] args)
+	{
+		Neon_Number2 obj= new Neon_Number2();
+		obj.check_neon_method();
+	}
+}
