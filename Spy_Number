@@ -1,0 +1,33 @@
+/*This is program which check the Number is Spy Number or not
+ * Spy Number means addition and Multiplication of digits of a number is same*/
+public class spy_number
+{
+	int num=1124;
+	int rem=0,sum=0,prod=1;
+	
+	private void operation()
+	{
+		while(num!=0)
+		{
+			rem = num%10;
+			sum = sum+rem;
+			prod = prod*rem; 
+			num = num/10;
+		}
+		if(sum==prod)
+		{
+			System.out.println("Given Number is Spy Number ");
+		}
+		else
+		{
+			System.out.println("Given Number is not Spy Number");
+		}
+	}
+	
+	public static void main(String[] args)
+	{
+		spy_number obj=new spy_number();
+		obj.operation();
+		
+	}
+}
