@@ -1,0 +1,30 @@
+
+public class palindrom_number 
+{
+	
+	public void meth1()
+	{	
+		int num=5665;
+		int temp=num;
+		int rem=0,rev=0;
+		while(temp!=0)
+		{
+			rem=temp%10;
+			rev=(rev*10)+rem;
+			temp=temp/10;
+		}
+		if(num==rev)
+		{
+			System.out.println("Given Number is palindrome");
+		}
+		else
+		{
+			System.out.println("Given Number is not palindrome");
+		}
+	}
+	public static void main(String[] args)
+	{
+		 palindrom_number obj=new  palindrom_number();
+		 obj.meth1();
+	}	
+}
