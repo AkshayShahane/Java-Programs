@@ -1,0 +1,16 @@
+/*WAP to find the power of a given number*/
+public class CharacterOccuranceInString
+{
+	
+	public static void main(String[] args)
+	{
+		int num=5;
+		int temp=num;
+		int power=4;
+		for(int i=1;i<power;i++)
+		{
+			num=num*temp;
+		}
+		System.out.println("Power Of "+temp+" is "+num);
+	}
+}
