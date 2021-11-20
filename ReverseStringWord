@@ -1,0 +1,21 @@
+/*WAP to reverse a String words without changing thr order of words
+ * example==> i/p = Welcome To Java
+ * 			  o/p = emocleW oT avaJ*/
+ 
+public class ReverseStringWordByWord
+{
+	public static void main(String[] args) 
+	{
+		String str="Welcome To Java";
+		String[] words=str.split(" ");
+		String reverseword="";
+		for(String w:words)
+		{
+			StringBuffer sb=new StringBuffer(w);
+			sb.reverse();
+			reverseword=reverseword+sb.toString()+" ";
+		}
+		System.out.println("Original String==>"+str);
+		System.out.println("Reverse String==> "+reverseword);
+	}
+}
