@@ -1,0 +1,10 @@
+//program to print the elements in an array
+public class array_element_count 
+{
+	public static void main(String[] args) 
+	{
+		int arr[]= {78,85,2,6,5,20,5,82,3,2,2,1};
+		
+		System.out.println("length of an array==>"+arr.length);
+	}
+}
