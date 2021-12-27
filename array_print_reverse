@@ -1,0 +1,18 @@
+//Program to print the array elements in reverse order
+public class array_print_reverse
+{
+	public static void main(String[] args)
+	{
+		int arr[]= {45,12,77,885,12,20};
+		System.out.println("Array Elements printing");
+		for(int i=0;i<arr.length;i++)
+		{
+			System.out.println(arr[i]);
+		}
+		System.out.println("Array Elements in Reverse Order");
+		for(int j=arr.length-1;j>=0;j--)
+		{
+			System.out.println(arr[j]);
+		}
+	}
+}
