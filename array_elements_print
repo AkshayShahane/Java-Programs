@@ -1,0 +1,13 @@
+//This is the program to print the elements in an array
+public class array_element_print 
+{
+	public static void main(String[] args) 
+	{
+		int []arr= {78,84,52,02,26,55};
+		System.out.println("Printing the array elements");
+		for(int i=0;i<arr.length;i++)
+		{
+			System.out.println(arr[i]);
+		}
+	}
+}
