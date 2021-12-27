@@ -1,0 +1,19 @@
+//program to find the largest element from the array
+public class array_largest_element
+{
+	public static void main(String[] args) 
+	{
+		int arr[]= {78,52,220,2,1,96,968,4588};
+		int max=arr[0];
+		System.out.println("***Printing the array largest Elements***");
+		
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i]>max)
+			{
+				max=arr[i];
+			}
+		}
+		System.out.println("Max Value is==>"+max);
+	}
+}
