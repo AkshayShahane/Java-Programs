@@ -1,0 +1,19 @@
+//letter count in the string
+public class test1
+{
+	public static void main(String[] args) 
+	{
+		String str="Java is awesome always and remains forever";
+		int count=0;
+		for(int i=0;i<=str.length()-1;i++)
+		{
+			if(str.charAt(i)!=' ')
+			{
+				count++;
+			}
+			
+		}
+		System.out.println("count of letters in the string==>"+count);
+		
+	}
+}
