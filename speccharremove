@@ -1,0 +1,12 @@
+// program to remove all special symbols in the string
+public class test7 
+{
+	public static void main(String[] args) 
+	{
+		String str="&($#%J&*A@@V&%A";
+		
+		String strnew = str.replaceAll("[^a-zA-Z0-9]", "");
+		
+		System.out.println(strnew);
+	}
+}
