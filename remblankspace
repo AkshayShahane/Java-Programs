@@ -1,0 +1,12 @@
+// remove all blank spaces between the string
+public class test5
+{
+	public static void main(String[] args) 
+	{
+		String str=" J  A      VA   ";
+		
+		String strNew=str.replaceAll("\\s", "");
+		
+		System.out.println(strNew);
+	}
+}
