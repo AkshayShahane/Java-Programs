@@ -1,0 +1,39 @@
+import java.util.*;
+// check both strings are anagram or not
+public class test3 
+{
+	public static void main(String[] args) 
+	{
+		String str1="Brag";
+		String str2="Grab";
+		
+		str1=str1.toLowerCase();  //brag 
+		str2=str2.toLowerCase();  //grab
+		
+		if(str1.length()!=str2.length())  //4==4   false
+		{
+			System.out.println("Both are not anagram");
+		}
+		else
+		{
+		
+			char[] string1=str1.toCharArray();
+			char[] string2=str2.toCharArray();
+			
+			//string1={'g','r','a','b'};
+			//string2={'b','r','a','g'};
+			
+			Arrays.sort(string1); // {'a','b','g','r'}
+			Arrays.sort(string2); // {'a','b','g','r'}
+			
+			if(Arrays.equals(string1, string2)==true) //true
+			{
+				System.out.println("Both are anagram");
+			}
+			else
+			{
+				System.out.println("Both are not anagram...");
+			}
+		}
+	}
+}
