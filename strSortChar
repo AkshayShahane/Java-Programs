@@ -1,0 +1,52 @@
+//sort the string characters and make sorted string
+import java.util.Arrays;
+
+public class test9 
+{
+	static String str="Programming";
+	
+	void withFunction()
+	{
+		System.out.println("===========================================");
+		System.out.println("Sorted String characters with using function");
+		
+		str=str.toLowerCase();
+		
+		char[] string=str.toCharArray();
+		
+		Arrays.sort(string);
+		
+		String strnew=new String(string);
+		
+		System.out.println("Sorted String Character ==>"+strnew);
+	}
+	
+	void withoutFunction()
+	{
+		System.out.println("===========================================");
+		char temp;
+		char[] ch=str.toCharArray();
+		
+		for(int i=0;i<ch.length;i++)
+		{
+			for(int j=i+1;j<ch.length;j++)
+			{
+				if(ch[i]>ch[j])
+				{
+					temp=ch[i];
+					ch[i]=ch[j];
+					ch[j]=temp;
+				}
+			}
+		}
+		String strNew=new String(ch);
+		System.out.println("Sorted String is =>"+strNew);
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("Original String ==>"+str);
+		test9 obj=new test9();
+		obj.withFunction();
+		obj.withoutFunction();
+	}
+}
