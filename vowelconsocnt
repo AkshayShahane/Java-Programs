@@ -1,0 +1,24 @@
+//vowel and consonent count
+public class test2
+{
+	public static void main(String[] args) 
+	{
+		String str="Java Is Awesome Always And Forever";
+		str=str.toLowerCase();
+		int vowelcnt=0,consocnt=0;
+		for(int i=0;i<=str.length()-1;i++)
+		{
+			if(str.charAt(i)=='a' || str.charAt(i)=='e' || str.charAt(i)=='i' ||
+			str.charAt(i)=='o' || str.charAt(i)=='u')
+			{
+				vowelcnt++;
+			}
+			else
+			{
+				consocnt++;
+			}
+		}
+		System.out.println("Vowel Count is ==> "+vowelcnt);
+		System.out.println("Consonent Count is ==>"+consocnt);
+	}
+}
